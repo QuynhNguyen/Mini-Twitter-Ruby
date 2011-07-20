@@ -6,6 +6,7 @@ gem 'rake', '0.8.7'
 group :development do
 	gem 'rspec-rails', '2.6'
 	gem 'webrat'
+	gem 'annotate'
 end
 
 group :test do
@@ -40,3 +41,4 @@ gem 'sqlite3'
 group :development, :test do
 	gem 'webrat'
 end
+
