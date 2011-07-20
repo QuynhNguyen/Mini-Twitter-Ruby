@@ -3,6 +3,7 @@ class CreateUsers < ActiveRecord::Migration
     create_table :users do |t|
       t.string :name
       t.string :email
+      t.string :age
 
       t.timestamps
     end
@@ -12,3 +13,4 @@ class CreateUsers < ActiveRecord::Migration
     drop_table :users
   end
 end
+
