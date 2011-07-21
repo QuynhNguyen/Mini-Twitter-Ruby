@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   attr_accessor   :password
-  attr_accessible :name, :email, :age, :password_confirmation, :password
+  attr_accessible :name, :email, :password_confirmation, :password
 
   email_regex = /[\w+\-.]+@[a-zA-Z\d.\-]+\.[a-zA-Z]+/i
 
@@ -52,6 +52,7 @@ end
 
 
 
+
 # == Schema Information
 #
 # Table name: users
@@ -61,7 +62,6 @@ end
 #  email              :string(255)
 #  created_at         :datetime
 #  updated_at         :datetime
-#  age                :integer
 #  encrypted_password :string(255)
 #  salt               :string(255)
 #
