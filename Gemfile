@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.9'
 gem 'rake', '0.8.7'
 gem 'spork'
+gem 'gravatar_image_tag'
 
 group :development do
 	gem 'rspec-rails', '2.6'
