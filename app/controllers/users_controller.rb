@@ -7,6 +7,13 @@ class UsersController < ApplicationController
   def show
    @user = User.find(params[:id])
    @title = @user.name
+
+   respond_to do |format|
+     format.html
+     format.xml { render :xml => @user}
+     format.any
+   end
+
   end
 
   def create
