@@ -7,3 +7,4 @@ class AddSaltToUsers < ActiveRecord::Migration
     remove_column :users, :salt
   end
 end
+

@@ -1,1 +1,2 @@
-A new readme file in markdown language by [*Quynh Nguyen*](http://www.google.com)
+A mini twitter like system coded with Ruby [*Quynh Nguyen*](http://www.google.com)
+
