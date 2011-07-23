@@ -1,21 +1,25 @@
 require 'rubygems'
 require 'spork'
 
+def test_sign_in(user)
+  controller.current_user = user
+end
+
 Spork.prefork do
-  # Loading more in this block will cause your tests to run faster. However, 
+  # Loading more in this block will cause your tests to run faster. However,
   # if you change any configuration or code from libraries loaded here, you'll
   # need to restart spork for it take effect.
-  
+
 end
 
 Spork.each_run do
   # This code will be run each time you run your specs.
-  
+
 end
 
 # --- Instructions ---
-# - Sort through your spec_helper file. Place as much environment loading 
-#   code that you don't normally modify during development in the 
+# - Sort through your spec_helper file. Place as much environment loading
+#   code that you don't normally modify during development in the
 #   Spork.prefork block.
 # - Place the rest under Spork.each_run block
 # - Any code that is left outside of the blocks will be ran during preforking
@@ -46,7 +50,7 @@ RSpec.configure do |config|
   # config.mock_with :flexmock
   # config.mock_with :rr
   config.mock_with :rspec
-  
+
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
@@ -57,3 +61,4 @@ RSpec.configure do |config|
   config.use_transactional_fixtures = true
   config.include Webrat::Matchers, :type => :views
 end
+
