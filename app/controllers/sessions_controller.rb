@@ -12,7 +12,8 @@ class SessionsController < ApplicationController
       flash.now[:error] = "Wrong email/password"
       render 'new'
     else
-
+      sign_in user
+      redirect_to user
     end
   end
 
